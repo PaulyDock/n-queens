@@ -100,14 +100,20 @@
     //
     // test if a specific column on this board contains a conflict
     hasColConflictAt: function(colIndex) {
-      return false; // fixme
-    },
 
+      return false;
+    }
+    
     // test if any columns on this board contain conflicts
     hasAnyColConflicts: function() {
-      return false; // fixme
+    let size = this.get('n');
+      let conflictExists = false;
+      for (let colIndex = 0; colIndex < size; colIndex++) {
+        conflictExists = conflictExists || this.hasColConflictAt(rowIndex);
+      }
+      return conflictExists;
     },
-
+  
 
 
     // Major Diagonals - go from top-left to bottom-right

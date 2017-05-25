@@ -16,7 +16,37 @@
 
 
 window.findNRooksSolution = function(n) {
-  var solution = undefined; //fixme
+  var solution = undefined;
+  var solutionBoard = new Board({n:n});
+  console.log(solutionBoard);
+  
+  var countRooksPlaced = 0;
+  for (var topRowIdx = 0; topRowIdx < n; topRowIdx++) {
+    for (var rowIdx = 1; rowIdx < n; rowIdx++) {
+      for (var colIdx = 0; colIdx < n; colIdx++) {
+      
+
+      }
+    }
+  }
+
+  
+
+
+  // iterate through each row up to n-1
+    // iterate through each column up to n-1
+      // place a rook (toggle?)
+      // check if board has conflicts
+      // if board has no conflicts
+        // countRooksPlaced++;
+        // break (that row only?)
+        // if countRooksPlaced = n
+          // return board;
+      // else 
+        //toggle piece
+  
+
+
 
   console.log('Single solution for ' + n + ' rooks:', JSON.stringify(solution));
   return solution;

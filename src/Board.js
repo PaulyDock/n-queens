@@ -169,13 +169,12 @@
       let diagonal = [];
       let size = this.get('n');
       let rowIdx = 0;
-      // colIdx = 5
+
       if (colIdx >= size) {
         rowIdx = colIdx - (size - 1);
         colIdx = size - 1;
       }
-      // rowIdx = 2
-      // colIdx = 3
+
 
       for (let diff = 0; diff < size; diff++) {
         if (rowIdx + diff >= size) {
